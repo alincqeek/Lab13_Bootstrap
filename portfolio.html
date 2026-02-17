@@ -1,0 +1,374 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксперимент с Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="custom.css">
+
+
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="logo" style="font-size: 2rem;">KuzVah</div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container-fluid py-5" style="background: linear-gradient(135deg,#fff8fe ,#cc81c7 );">
+    <div class="container text-center">
+        <h1 class="display-4">Добро пожаловать!</h1>
+        <p class="lead">Это мой сайт портфолио</p>
+        <button class="btn btn-lg" style="background-color: #ff07ea; border-color: #ff07ea; color: white;">Узнать
+            больше</button>
+    </div>
+</div>
+
+<div class="row g-3" id="foto">
+    <div class="col-6 col-md-4 foto" data-category="web">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/64/25/d9/6425d9533e83434d24d667db3dbe79bf.jpg" class="card-img-top"
+                alt="Веб-проект">
+            <div class="card-body p-2">
+                <h6 class="card-title mb-0">Пишем код на высшем уровне</h6>
+                <small class="text-muted">Ооооочень круто</small>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-6 col-md-4 gallery-item" data-category="photo">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/46/90/c3/4690c36c665df315a21c500cb4b7d562.jpg" class="card-img-top"
+                alt="Веб-проект">
+            <div class="card-body p-2">
+                <h6 class="card-title mb-0">Можете купить наши услуги</h6>
+                <small class="text-muted">Не дорого</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <div class="card border-white shadow-sm p-4 text-center">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">О нашей компании</h3>
+                    <p class="card-text lead">
+                        Мы - команда профессионалов, создающих качественные веб-решения.
+                        Наш опыт позволяет реализовывать проекты любой сложности,
+                        от простых сайтов до сложных веб-приложений.
+                    </p>
+                    <p class="card-text">
+                        Используем современные технологии и индивидуальный подход к каждому клиенту.
+                        Гарантируем качество и соблюдение сроков.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" id="services">
+    <h2 class="text-center mb-5" style="color: #181618; ">Наши услуги</h2>
+    <div class="row g-4">
+        <!-- Карточка 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg border-0"
+                style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d); border-radius: 15px; transition: transform 0.3s ease;">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <span style="font-size: 3rem;">💻</span>
+                    </div>
+                    <h5 class="card-title mb-3" style="color: #ff07ea; font-weight: bold;">Веб-разработка</h5>
+                    <p class="card-text text-white-50 mb-4">
+                        Создаем современные адаптивные веб-сайты с использованием
+                        последних технологий и лучших практик.
+                    </p>
+                    <a href="#" class="btn"
+                        style="background: #ff07ea; color: white; border: none; padding: 10px 25px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease;">Подробнее
+                        →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg border-0"
+                style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d); border-radius: 15px; transition: transform 0.3s ease;">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <span style="font-size: 3rem;">📱</span>
+                    </div>
+                    <h5 class="card-title mb-3" style="color: #ff07ea; font-weight: bold;">Мобильные приложения</h5>
+                    <p class="card-text text-white-50 mb-4">
+                        Разрабатываем нативные и кроссплатформенные мобильные приложения
+                        для iOS и Android.
+                    </p>
+                    <a href="#" class="btn"
+                        style="background: #ff07ea; color: white; border: none; padding: 10px 25px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease;">Подробнее
+                        →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg border-0"
+                style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d); border-radius: 15px; transition: transform 0.3s ease;">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <span style="font-size: 3rem;">🎨</span>
+                    </div>
+                    <h5 class="card-title mb-3" style="color: #ff07ea; font-weight: bold;">UI/UX Дизайн</h5>
+                    <p class="card-text text-white-50 mb-4">
+                        Проектируем интуитивные пользовательские интерфейсы с фокусом на
+                        удобство и эстетику.
+                    </p>
+                    <a href="#" class="btn"
+                        style="background: #ff07ea; color: white; border: none; padding: 10px 25px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease;">Подробнее
+                        →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Секция Портфолио/Проекты -->
+<div class="container my-5" id="portfolio">
+    <h2 class="text-center mb-5" >Наши проекты</h2>
+    
+    <div class="row g-4" id="foto">
+        <!-- Проект 1 -->
+        <div class="col-6 col-md-4 foto-item">
+            <div class="card h-100 portfolio-card">
+                <img src="https://i.pinimg.com/736x/07/e0/c5/07e0c58145808b8087796c5dc7e26cc4.jpg" class="card-img-top" alt="Интернет-магазин">
+                <div class="card-body">
+                    <h6 class="card-title">Интернет-магазин</h6>
+                    <small class="text-muted">Полноценный e-commerce проект</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 2 -->
+        <div class="col-6 col-md-4 foto-item">
+            <div class="card h-100 portfolio-card">
+                <img src="https://i.pinimg.com/736x/bf/88/fc/bf88fc9f47e5463998060735b1f83ef8.jpg" class="card-img-top" alt="Блог о технологиях">
+                <div class="card-body">
+                    <h6 class="card-title">Блог о технологиях</h6>
+                    <small class="text-muted">С админ-панелью и комментариями</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 3 -->
+        <div class="col-6 col-md-4 foto-item">
+            <div class="card h-100 portfolio-card">
+                <img src="https://i.pinimg.com/1200x/c6/dd/45/c6dd4569461ee2016b8d91cd84488b78.jpg" class="card-img-top" alt="Лендинг">
+                <div class="card-body">
+                    <h6 class="card-title">Лендинг для стартапа</h6>
+                    <small class="text-muted">С анимациями и формами</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 4 -->
+        <div class="col-6 col-md-4 foto-item">
+            <div class="card h-100 portfolio-card">
+                <img src="https://i.pinimg.com/736x/1e/7f/2a/1e7f2a5a41a75f02118a6b2fc3cb63d2.jpg" class="card-img-top" alt="Дашборд">
+                <div class="card-body">
+                    <h6 class="card-title">Дашборд аналитики</h6>
+                    <small class="text-muted">Интерактивная панель управления</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 5 -->
+        <div class="col-6 col-md-4 foto-item">
+            <div class="card h-100 portfolio-card">
+                <img src="https://i.pinimg.com/1200x/cd/d2/d9/cdd2d976c68594f751dbd3c933557b57.jpg" class="card-img-top" alt="Мобильное приложение">
+                <div class="card-body">
+                    <h6 class="card-title">Мобильное приложение</h6>
+                    <small class="text-muted">Для фитнес-трекинга</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 6 -->
+        <div class="col-6 col-md-4 foto-item">
+            <div class="card h-100 portfolio-card">
+                <img src="https://i.pinimg.com/736x/87/16/7d/87167d2c85be7780a429c88344f3a1fe.jpg" class="card-img-top" alt="Корпоративный портал">
+                <div class="card-body">
+                    <h6 class="card-title">Корпоративный портал</h6>
+                    <small class="text-muted">Управление задачами</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Секция с формой -->
+    <div class="container my-5" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <!-- Имя -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required />
+                        <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите корректный email
+                        </div>
+                    </div>
+                    <!-- Сообщение -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение"
+                            required></textarea>
+                        <div class="invalid-feedback">Пожалуйста, введите сообщение</div>
+                    </div>
+                    <!-- Checkbox -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" required />
+                        <label class="form-check-label" for="agree">
+                            Я согласен с политикой конфиденциальности
+                        </label>
+                        <div class="invalid-feedback">
+                            Вы должны согласиться с условиями
+                        </div>
+                    </div>
+                    <!-- Кнопка отправки -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg" style="background-color: #ff07ea;">
+                            Отправить сообщение
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5" style="border-top: 3px solid #ff07ea; box-shadow: 0 -5px 20px rgba(255, 7, 234, 0.2);">
+    <div class="container">
+        <div class="row">
+      
+            <div class="col-md-4 mb-4">
+                <h5 style="color: #ff07ea; font-weight: bold; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">
+                    <span style="border-bottom: 2px solid #ff07ea; padding-bottom: 5px;">О компании</span>
+                </h5>
+                <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                    Мы создаем современные веб-решения для вашего бизнеса с
+                    использованием передовых технологий и индивидуальным подходом.
+                </p>
+                <div class="mt-3">
+                    <span class="badge" style="background: #ff07ea; color: white; padding: 5px 10px; margin-right: 5px;">HTML5</span>
+                    <span class="badge" style="background: #ff07ea; color: white; padding: 5px 10px; margin-right: 5px;">CSS3</span>
+                    <span class="badge" style="background: #ff07ea; color: white; padding: 5px 10px;">Bootstrap</span>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4 mb-4">
+                <h5 style="color: #ff07ea; font-weight: bold; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">
+                    <span style="border-bottom: 2px solid #ff07ea; padding-bottom: 5px;">Быстрые ссылки</span>
+                </h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#home" class="text-white-50 text-decoration-none" style="transition: all 0.3s ease; display: inline-block;">
+                            → Главная
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#services" class="text-white-50 text-decoration-none" style="transition: all 0.3s ease; display: inline-block;">
+                            → Услуги
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#about" class="text-white-50 text-decoration-none" style="transition: all 0.3s ease; display: inline-block;">
+                            → О нас
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#contact" class="text-white-50 text-decoration-none" style="transition: all 0.3s ease; display: inline-block;">
+                            → Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 style="color: #ff07ea; font-weight: bold; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">
+                    <span style="border-bottom: 2px solid #ff07ea; padding-bottom: 5px;">Контакты</span>
+                </h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3 d-flex align-items-center">
+                        <span style="color: #ff07ea; margin-right: 10px;">✉</span>
+                        <span style="color: rgba(255, 255, 255, 0.8);">info@kuzvah.ru</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <span style="color: #ff07ea; margin-right: 10px;">📞</span>
+                        <span style="color: rgba(255, 255, 255, 0.8);">+7 (999) 123-45-67</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <span style="color: #ff07ea; margin-right: 10px;">📍</span>
+                        <span style="color: rgba(255, 255, 255, 0.8);">Волжский, ул. Пушкина, д. 42</span>
+                    </li>
+                </ul>
+                
+                <!-- Социальные сети -->
+                <div class="mt-4">
+                    <a href="#" class="btn btn-sm" style="background: transparent; border: 1px solid #ff07ea; color: #ff07ea; margin-right: 5px; border-radius: 50%; width: 35px; height: 35px; padding: 0; line-height: 35px; text-align: center;">f</a>
+                    <a href="#" class="btn btn-sm" style="background: transparent; border: 1px solid #ff07ea; color: #ff07ea; margin-right: 5px; border-radius: 50%; width: 35px; height: 35px; padding: 0; line-height: 35px; text-align: center;">in</a>
+                    <a href="#" class="btn btn-sm" style="background: transparent; border: 1px solid #ff07ea; color: #ff07ea; margin-right: 5px; border-radius: 50%; width: 35px; height: 35px; padding: 0; line-height: 35px; text-align: center;">tg</a>
+                </div>
+            </div>
+        </div>
+
+      
+        <hr style="border-color: #ff07ea; opacity: 0.3; margin: 30px 0;" />
+
+   
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-2" style="color: rgba(255, 255, 255, 0.9);">
+                    &copy; 2026 <span style="color: #ff07ea; font-weight: bold;">KuzVah</span>. Все права защищены.
+                </p>
+                <p class="mb-0" style="color: rgba(255, 255, 255, 0.5); font-size: 0.9rem;">
+                    Создано с <span style="color: #ff07ea;">❤</span> с помощью Bootstrap 5
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
